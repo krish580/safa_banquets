@@ -57,6 +57,7 @@ article, aside, address, section, video, audio {
 	-webkit-font-smoothing: antialiased;
 	-ms-word-wrap: break-word;
 	    word-wrap: break-word;
+	scroll-behavior: smooth;
 }
 html, body {
 	margin: 0;
@@ -77,21 +78,32 @@ html {
 body {
 	/* height: 100%; */					/* Commented, because it conflict with overflow-x: hidden - appear second scrollbar while tooltip is display in the Booked plugin */
 }
-
+.bor1{
+	border: 8px solid #ca965c;
+}
 
 @font-face {
 	font-family: myFnth;
-	src: url(font/FuturaMediumBT[1].ttf);
+	/* src: url(font/FuturaMediumBT[1].ttf); */
+	src: url(font/FUTRFW.TTF);
   }
   
   .fnth{
 	font-family: myFnth;
 	text-transform: uppercase;
   }
+  .fnth1{
+	/* font-family: myFnth; */
+	text-transform: uppercase;
+  }
+  .fnthb{
+	color: #000000;
+  }
 
   @font-face {
 	font-family: myFntsh;
-	src: url(font/FUTRFW.TTF);
+	src: url(font/FuturaMediumBT[1].ttf);
+	/* src: url(font/FUTRFW.TTF); */
   }
 
   .fntsh{
@@ -1580,15 +1592,15 @@ fieldset legend {
 .columns-flex > [class*="container"] > .columns_wrap > .column_container,
 .columns-flex [class*="sc_parallax"] > [class*="container"] > .columns_wrap > .column_container {
 	 display: flex;
-	// float: left;
+	/* float: left; */
     vertical-align: middle;
-    // display: table-cell;
+     /* display: table-cell; */
     display: inline-block;
 }
 .columns-flex:after {
-	// content: '';
+	/* // content: '';
 	// display: block;
-	// clear: both;
+	// clear: both; */
 }
 .columns-flex > [class*="container"] > .columns_wrap > .column_container > .column-inner,
 .columns-flex [class*="sc_parallax"] > [class*="container"] > .columns_wrap > .column_container > .column-inner{
@@ -6194,7 +6206,7 @@ content: '';
 	    transform: translateY(-50%);
 	    -webkit-transform: translateY(-50%);
 	    margin-bottom: -2.1em;
-	    padding:;
+	    /* padding:; */
 }
 
 
@@ -6206,8 +6218,8 @@ content: '';
 	margin-top: 0;
 	margin-bottom: 0.77em;
 	font-size: 1.429em;
-	/* font-family: Courgette; */
-	font-family: myFnth;
+	font-family: Courgette;
+	/* font-family: myFnth; */
 }
 
 footer+footer.widget_area .footer_wrap_inner{
@@ -8157,6 +8169,12 @@ margin-top: 30px !important;
     background-size: cover !important;
 }
 .sc_home-bg-type-b1 {
+    background-image: url(../image/contactbg.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.sc_home-bg-type-b2 {
     background-image: url(../image/spring-greeting-card-pastel-color-rose-on-the-gra-2021-08-29-01-17-34-utc.jpg) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
