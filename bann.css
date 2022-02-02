@@ -1,0 +1,40 @@
+.bann_bor{
+    border: 1px solid #ca965c;
+}
+.slider{
+    padding-top: 1px;
+    width: 100%;
+    height: 88vh;
+    /* background-color: red; */
+    background: url(image/hero/close-up-of-two-gold-wedding-rings-for-a-wedding-2021-08-30-12-04-01-utc.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: zoom 20s infinite;
+}
+
+@keyframes zoom {
+    25%{
+        /* background-color: rgb(170, 102, 102); */
+        background: url(image/hero/close-up-of-two-gold-wedding-rings-for-a-wedding-2021-08-30-12-04-01-utc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        /* background-color: rgb(206, 181, 43); */
+        background: url(image/hero/wedding-bouquet-2021-08-26-12-08-13-utc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        /* background-color: rgb(69, 40, 231); */
+        background: url(image/hero/wedding-couple-2021-08-26-18-29-46-utc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        /* background-color: rgb(231, 28, 136); */
+        background: url(image/hero/wedding-bouquet-2021-08-26-12-08-13-utc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
