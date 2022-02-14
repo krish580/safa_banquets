@@ -10,15 +10,18 @@ function closeFullImg(){
 }
 
 $(function(){
-    var navbar = $('.header-inner');
-    $(window).scroll(function(){
-      if($(window).scrollTop() <=40){
-        navbar.removeClass('navbar-scroll');
-      }else{
-        navbar.addClass('navbar-scroll');
-      }
-    });
+  var navbar = $('.header-inner');
+  var gotop = $('.gtb');
+  $(window).scroll(function(){
+    if($(window).scrollTop() <=40){
+      navbar.removeClass('navbar-scroll');
+      gotop.removeClass('gotopbtn');
+    }else{
+      navbar.addClass('navbar-scroll');
+      gotop.addClass('gotopbtn');
+    }
   });
+});
 
 
   const slides=document.querySelector(".slider").children;
