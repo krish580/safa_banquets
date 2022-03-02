@@ -305,29 +305,46 @@ box-shadow:0px 1px 10px rgba(0,0,0,0.4);
 transition-duration: 0.6s;
 }
 /* about section */
+
 .about{
-width: 100%;
-height: auto;
-margin-top: 30px;
-}
-.bg_about{
-height: 100%;
-width: 100%;
-background-image: url('images/contactbg.jpg');
-background-size: cover;
-background-position: center;
-}
-.caro::after{
-border: 3px solid #ffffff;
-height: 95%;
-width: 95%;
-position: absolute;
-left: 2.5%;
-top: 2.5%;
-}
-.bor1{
-border: 3px solid #CA965C; 
-}
+    width: 100%;
+    background-image: url('images/contactbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .dwnld-button{
+        margin-bottom: 20px;
+    }
+    .dwnld-button a{
+        margin-top: 0px;
+        background-color: #CA965C;
+        padding: 1.4em 3.77em;
+        transition: 0.5s linear;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2857em;
+        font-size: 0.857em;
+        letter-spacing: 3.4px;
+    }
+    .dwnld-button a:hover{
+        background-color: #EEC373;
+        color: #ffffff;
+    }
+    .caro::after{
+    border: 3px solid #ffffff;
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    left: 2.5%;
+    top: 2.5%;
+    }
+    .bor1{
+    border: 3px solid #CA965C; 
+    }
+
 .btn-sqare{
 margin-top: 0px;
 background-color: #CA965C;
@@ -369,6 +386,7 @@ content: 'jayesh';
 }
 
 .hbox{
+    border: 1px solid #CA965C;
     position: relative;
     overflow: hidden;
 }
@@ -395,7 +413,8 @@ content: 'jayesh';
 }
 .hbox:hover .content{
     top: 0;
-}
+}        
+
 /* testimonials */
 .testimonial{
     width: 100%;
@@ -448,7 +467,6 @@ content: 'jayesh';
 /* contact section  */
 .contact{
     width: 100%;
-    /* height: 100vh; */
     background-image: url('images/spring-greeting.jpg');
 	background-size: cover;
 	background-position: center;
