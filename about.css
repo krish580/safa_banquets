@@ -1,0 +1,55 @@
+/* about section */
+.row1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.crd{
+    position: relative;
+    background: #ca965c;
+    height: 250px;
+}
+.crd1{
+    background: #ca965c;
+}
+@media screen and (max-width:991px){
+    .crd1{
+        background: white;
+    }
+    .crd{
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+}
+.card-icon{
+    height: 90px;
+}
+.card-icon1{
+    position: relative;
+    background: #EEC373;
+    color: white;
+    width: 115.19px;
+    height: 115.19px;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: -57.595px;
+    transition: 0.3s linear;
+}
+
+.card-icon1 i::before{
+    position: relative;
+    font-size: 2.66em;
+    top: 35.315px;
+    left: 39.315px;
+}
+.crd1:hover .card-icon1{
+    background: #ca965c;
+    /* background: #F4DFBA; */
+    transform: scale(1.3);
+}
+
+.crd2 p{
+    font-family: myFnth;
+}
+
+
